@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
     Button btn,stop;
     Circle circle1,circle2,circle3;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         wave1=findViewById(R.id.wave1);
         wave2=findViewById(R.id.wave2);
@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 circle3.startAnimation(animation4);
                 circle2.startAnimation(animation5);
                 circle1.startAnimation(animation6);
+
             }
         });
 
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 wave3.clearAnimation();
                 wave4.clearAnimation();
                 wave5.clearAnimation();
+
             }
         });
     }

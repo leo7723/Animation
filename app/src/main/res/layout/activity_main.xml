@@ -60,6 +60,10 @@
         </FrameLayout>
 
     </LinearLayout>
+    <com.wiipu.xian.myownview.CountTimeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"/>
    <Button
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
