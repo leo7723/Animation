@@ -40,7 +40,7 @@ public class CountTimeTextView extends TextView implements Runnable{
     @Override
     public void run() {
         if (isRunning)
-        setText(num++);
+        setText(String.valueOf(num++));
         postDelayed(this,1000);
     }
 

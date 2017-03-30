@@ -14,12 +14,15 @@ public class MainActivity extends AppCompatActivity {
     Button btn,stop;
     Circle circle1,circle2,circle3;
 
+    CountTimeTextView cttv;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        cttv= (CountTimeTextView) findViewById(R.id.ctt);
         wave1=findViewById(R.id.wave1);
         wave2=findViewById(R.id.wave2);
         wave3=findViewById(R.id.wave3);
@@ -50,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 circle3.startAnimation(animation4);
                 circle2.startAnimation(animation5);
                 circle1.startAnimation(animation6);
-
+                cttv.start();
             }
         });
 
@@ -62,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 wave3.clearAnimation();
                 wave4.clearAnimation();
                 wave5.clearAnimation();
-
+                cttv.stop();
             }
         });
     }
